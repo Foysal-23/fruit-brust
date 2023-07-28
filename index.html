@@ -9,7 +9,18 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&family=Poppins:ital,wght@0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
-
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          clifford: '#da373d',
+          'primary-color':'#F85559',  
+        }
+      }
+    }
+  }
+</script>
 <style>
   .fonts {
     font-family: 'Open Sans', sans-serif;
@@ -20,7 +31,48 @@
 <body class="fonts">
   <header>
 
+<nav class="  px-8 " >
+  <div class="navbar bg-primary-color rounded-full backdrop:">
 
+      
+  
+    <div class=" pl-2  navbar-start hidden  md:flex lg:flex">
+      <ul class="menu menu-horizontal px-1 text-white ">
+        <li><a>Home</a></li>
+          
+        <li><a>About Us</a></li>
+        
+        <li><a>Shop</a></li>
+        
+        <li><a>All Fruits</a></li>
+      </ul>
+    </div>
+
+    <img class=" w-10" src="images/logo.png" alt="">
+      <a class="px-2 normal-case text-2xl text-white">FruitBurst</a>
+
+
+    <div class="navbar-end px-4  ">
+      <input class="rounded-full text-xs p-2 pl-4 pr-20 font-light border-none " type="search" placeholder="Search Here">
+    </div>
+
+    <div class="navbar-end lg:hidden">
+      <div class="dropdown">
+        <label tabindex="0" class="btn btn-ghost lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+        </label>
+        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+          <li><a>Home</a></li>
+          
+          <li><a>About Us</a></li>
+          
+          <li><a>Shop</a></li>
+          
+          <li><a>All Fruits</a></li>
+        </ul>
+      </div>
+  </div>
+</nav>
 
 
 
